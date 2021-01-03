@@ -8,27 +8,22 @@ router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   Product.findAll({
-    attributes: [
-      'id',
-      'product_name',
-      'price',
-      'stock',
-      'category_id'
-    ],
-    include: [
-      {
-        model: Category,
-        attributes: [
-          'id',
-          'category_name'
-        ]
-      },
+    // attributes: [
+    //   'id',
+    //   'product_name',
+    //   'price',
+    //   'stock',
+    //   'category_id'
+    // ],
+    include: [Category,
       {
         model: Tag,
-        attributes: [
-          'id',
-          'tag_name'
-        ]
+        // attributes: [
+        //   'id',
+        //   'tag_name'
+        // ],
+        through: {attributes: []}
+        //as: 'tagged_products'
       }
     ]
   })
@@ -54,22 +49,23 @@ router.get('/:id', (req, res) => {
       'stock',
       'category_id'
     ],
-    include: [
-      {
-        model: Category,
-        attributes: [
-          'id',
-          'category_name'
-        ]
-      },
-      {
-        model: Tag,
-        attributes: [
-          'id',
-          'tag_name'
-        ]
-      }
-    ]
+    include: [Category, Tag]
+    //   {
+    //     model: Category,
+    //     attributes: [
+    //       'id',
+    //       'category_name'
+    //     ]
+    //   },
+    //   {
+    //     // model: Tag,
+    //     // attributes: [
+    //     //   'id',
+    //     //   'tag_name'
+    //     // ],
+    //     association: 'tagged_products'
+    //   }
+    // ]
   })
     .then(dbProductData => {
       if (!dbProductData) {

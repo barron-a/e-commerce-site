@@ -20,16 +20,17 @@ router.get('/', (req, res) => {
           'price',
           'stock',
           'category_id'
-        ]
+        ],
+        as: 'tagged_products'
       },
-      {
-        model: ProductTag,
-        attributes: [
-          'id',
-          'product_id',
-          'tag_id'
-        ]
-      }
+      // {
+      //   model: ProductTag,
+      //   attributes: [
+      //     'id',
+      //     'product_id',
+      //     'tag_id'
+      //   ]
+      // }
     ]
   })
     .then(dbTagData => res.json(dbTagData))
@@ -59,16 +60,17 @@ router.get('/:id', (req, res) => {
           'price',
           'stock',
           'category_id'
-        ]
+        ],
+        as: 'tagged_products'
       },
-      {
-        model: ProductTag,
-        attributes: [
-          'id',
-          'product_id',
-          'tag_id'
-        ]
-      }
+      // {
+      //   model: ProductTag,
+      //   attributes: [
+      //     'id',
+      //     'product_id',
+      //     'tag_id'
+      //   ]
+      // }
     ]
   })
     .then(dbTagData => {

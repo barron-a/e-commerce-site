@@ -2,7 +2,13 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Tag extends Model {}
+class Tag extends Model {
+  toJSON(){
+    const values = this.get();
+    delete values.product_tag;
+    return values;
+  }
+}
 
 Tag.init(
   {
