@@ -47,9 +47,9 @@ Navigate to the cloned repository and run 'npm install' to install required pack
 To use this application, navigate to the cloned folder from your Terminal and run 'npm start' from the command line. You will be alerted that the app is listening and can then test the routes in your REST Client.
 
 ### Video Demo
-Please visit the following link for Part 1 [video demo](https://drive.google.com/file/d/1qpJWrynmiEjn97IDvH8wLVF8v40VEBxI/view)
+Please visit the following link for Part 1 [video demo](https://drive.google.com/file/d/1qpJWrynmiEjn97IDvH8wLVF8v40VEBxI/view). Part 1 covers technical Requirements, running the schema command, and seeding the database.
 
-Please visit the following link for Part 2 [video demo](https://drive.google.com/file/d/1ife8fxmyA_9dj9tVDxgPFjZMqM36aii3/view)
+Please visit the following link for Part 2 [video demo](https://drive.google.com/file/d/1ife8fxmyA_9dj9tVDxgPFjZMqM36aii3/view). Part 2 covers testing All Category, Product, and Tag Routes in Insomnia Core.
 
 ---
 
