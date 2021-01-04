@@ -37,7 +37,8 @@ E-Commerce Backend is an Express.js API configured to use Sequelize to interact 
 ---
 
 ## Installation
-Clone the repository from https://github.com/barron-a/e-commerce-site
+Clone the repository from https://github.com/barron-a/e-commerce-site.
+
 Navigate to the cloned repository and run 'npm install' to install required packages and dependencies.
 
 ---
@@ -47,6 +48,7 @@ To use this application, navigate to the cloned folder from your Terminal and ru
 
 ### Video Demo
 Please visit the following link for Part 1 [video demo](https://drive.google.com/file/d/1qpJWrynmiEjn97IDvH8wLVF8v40VEBxI/view)
+
 Please visit the following link for Part 2 [video demo](https://drive.google.com/file/d/1ife8fxmyA_9dj9tVDxgPFjZMqM36aii3/view)
 
 ---
